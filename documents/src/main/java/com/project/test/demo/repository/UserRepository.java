@@ -11,8 +11,8 @@ import java.util.List;
 public interface UserRepository extends JpaRepository<User, Integer> {
 
     //---- findBy
-    public List<User> findByType(String type);
+    //public List<User> findByType(String type);
 
-    public List<User> findByStatusUser(String status);
+    //public List<User> findByStatusUser(String status);
 
 }
