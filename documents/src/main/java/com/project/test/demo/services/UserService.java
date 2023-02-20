@@ -24,20 +24,20 @@ public class UserService {
         return liste;
     }
     //-- 4 selectionner les utilisateurs employes ou le boss
-    public List<User> getAllTypeUser(String type){
+    /*public List<User> getAllTypeUser(String type){
         List<User> liste = userRepository.findByType(type);
         return  liste;
-    }
+    }*/
     //-- 5 selectionner un seule utilisateur
     public User getOneUser(int id){
         User user = userRepository.findById(id).get();
         return user;
     }
     //-- 6 selectionner tout les utilisateurs ayant pas les autorisations ou pas
-    public List<User> getAllUserAuth(String status){
+    /*public List<User> getAllUserAuth(String status){
         List<User> user = userRepository.findByStatusUser(status);
         return user;
-    }
+    }*/
 
     //-- 9 authentification d'un user
 }
